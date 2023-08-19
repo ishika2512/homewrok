@@ -3,6 +3,5 @@ const categoyRoute = require("./category.route");
 
 const router = express.Router();
 
-router.use("/category", categoyRoute
-);
+router.use("/category", categoyRoute);
 module.exports = router;

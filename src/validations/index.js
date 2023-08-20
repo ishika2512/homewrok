@@ -1,1 +1,1 @@
-module.exports.userValidation = require("./category.validation");
+module.exports.bookValidation = require("./book.validation");

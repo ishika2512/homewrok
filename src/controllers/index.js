@@ -1,1 +1,1 @@
-module.exports.categoryController = require("./catrgory.controller");
+module.exports.bookController = require("./book.controller");

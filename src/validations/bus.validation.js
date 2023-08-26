@@ -1,15 +1,17 @@
 const Joi = require("joi");
 
-/** create category */
-const createCategory = {
+/** create bus */
+const createBus = {
     body: Joi.object().keys({
-        category_name: Joi.string().required().trim(),
-        category_desc: Joi.string().required().trim()
+        bus_name: Joi.string().required().trim(),
+        bus_route: Joi.string().required().trim(),
+        driver_name: Joi.string().required().trim(),
+        ticket_price: Joi.number().integer().required()
     }),
 };
 
-/** GEt category list */
-const getCategoryList = {
+/** GEt bus list */
+const getBusList = {
     query: Joi.object().keys({
         search: Joi.string().trim().allow(""),
         sortBy: Joi.string().trim().allow(""),
@@ -19,6 +21,6 @@ const getCategoryList = {
 };
 
 module.exports = {
-    createCategory,
-    getCategoryList
+    createBus,
+    getBusList
 };

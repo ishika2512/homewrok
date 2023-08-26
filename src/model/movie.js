@@ -1,16 +1,23 @@
-const { number } = require("joi");
 const mongoose = require("mongoose");
-const categorySchema = new mongoose.Schema(
+const movieSchema = new mongoose.Schema(
     {
-        category_name: {
+        movie_name: {
             type: String,
             trim: true,
         },
-        category_desc: {
+        directed_by: {
             type: String,
             trim: true,
         },
-        category_price: {
+        actor_name: {
+            type: String,
+            trim: true,
+        },
+        actress_name: {
+            type: String,
+            trim: true,
+        },
+        ticket_price: {
             type: Number,
         },
         is_active: {
@@ -24,5 +31,5 @@ const categorySchema = new mongoose.Schema(
     }
 );
 
-const Category = mongoose.model("category", categorySchema);
-module.exports = Category;
+const Movie = mongoose.model("movie", movieSchema);
+module.exports = Movie;

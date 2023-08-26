@@ -1,16 +1,19 @@
-const { number } = require("joi");
 const mongoose = require("mongoose");
-const categorySchema = new mongoose.Schema(
+const busSchema = new mongoose.Schema(
     {
-        category_name: {
+        bus_name: {
             type: String,
             trim: true,
         },
-        category_desc: {
+        bus_route: {
             type: String,
             trim: true,
         },
-        category_price: {
+        driver_name: {
+            type: String,
+            trim: true,
+        },
+        ticket_price: {
             type: Number,
         },
         is_active: {
@@ -24,5 +27,5 @@ const categorySchema = new mongoose.Schema(
     }
 );
 
-const Category = mongoose.model("category", categorySchema);
-module.exports = Category;
+const Bus = mongoose.model("bus", busSchema);
+module.exports = Bus;

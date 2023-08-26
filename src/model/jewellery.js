@@ -1,16 +1,22 @@
-const { number } = require("joi");
 const mongoose = require("mongoose");
-const categorySchema = new mongoose.Schema(
+const jewellerySchema = new mongoose.Schema(
     {
-        category_name: {
+        jewellery_name: {
             type: String,
             trim: true,
         },
-        category_desc: {
+        jewellery_type: {
             type: String,
             trim: true,
         },
-        category_price: {
+        jewellery_materials: {
+            type: String,
+            trim: true,
+        },
+        bill_number: {
+            type: Number,
+        },
+        total_amount: {
             type: Number,
         },
         is_active: {
@@ -24,5 +30,5 @@ const categorySchema = new mongoose.Schema(
     }
 );
 
-const Category = mongoose.model("category", categorySchema);
-module.exports = Category;
+const Jewellery = mongoose.model("jewellery", jewellerySchema);
+module.exports = Jewellery;

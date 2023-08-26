@@ -1,7 +1,7 @@
 const Joi = require("joi");
 
 const validate = (schema) => (req, res, next) => {
-    
+
     const { value, error } = Joi.compile(validSchema)
         .prefs({ errors: { label: "key" }, abortEarly: false })
         .validate(object);

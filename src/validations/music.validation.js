@@ -1,15 +1,16 @@
 const Joi = require("joi");
 
-/** create category */
-const createCategory = {
+/** create music */
+const createMusic = {
     body: Joi.object().keys({
-        category_name: Joi.string().required().trim(),
-        category_desc: Joi.string().required().trim()
+        song_title: Joi.string().required().trim(),
+        song_name: Joi.string().required().trim(),
+        artists_name: Joi.string().required().trim(),
     }),
 };
 
-/** GEt category list */
-const getCategoryList = {
+/** GEt music list */
+const getMusicList = {
     query: Joi.object().keys({
         search: Joi.string().trim().allow(""),
         sortBy: Joi.string().trim().allow(""),
@@ -19,6 +20,6 @@ const getCategoryList = {
 };
 
 module.exports = {
-    createCategory,
-    getCategoryList
+    createMusic,
+    getMusicList
 };

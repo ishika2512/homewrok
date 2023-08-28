@@ -1,0 +1,12 @@
+module.exports.category = require("./category");
+module.exports.bus = require("./bus");
+module.exports.hotel = require("./hotel");
+module.exports.stationary = require("./stationary");
+module.exports.school = require("./school");
+module.exports.travel = require("./travel");
+module.exports.pharma = require("./pharma");
+module.exports.jewellery = require("./jewellery");
+module.exports.movie = require("./movie");
+module.exports.music = require("./music");
+module.exports.jewellery = require("./jewellery");
+module.exports.grocery = require("./grocery");

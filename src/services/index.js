@@ -1,0 +1,11 @@
+module.exports.userSercice = require("./category.service");
+module.exports.userSercice = require("./bus.service");
+module.exports.userSercice = require("./grocery.service");
+module.exports.userSercice = require("./hotel.service");
+module.exports.userSercice = require("./jewellery.service");
+module.exports.userSercice = require("./movie.service");
+module.exports.userSercice = require("./music.service");
+module.exports.userSercice = require("./pharma.service");
+module.exports.userSercice = require("./school.service");
+module.exports.userSercice = require("./stationary.service");
+module.exports.userSercice = require("./travel.service");

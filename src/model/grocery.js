@@ -1,16 +1,18 @@
-const { number } = require("joi");
 const mongoose = require("mongoose");
-const categorySchema = new mongoose.Schema(
+const grocerySchema = new mongoose.Schema(
     {
-        category_name: {
+        grocery_name: {
             type: String,
             trim: true,
         },
-        category_desc: {
+        grocery_category: {
             type: String,
             trim: true,
         },
-        category_price: {
+        grocery_quanty: {
+            type: Number,
+        },
+        grocery_price: {
             type: Number,
         },
         is_active: {
@@ -24,5 +26,5 @@ const categorySchema = new mongoose.Schema(
     }
 );
 
-const Category = mongoose.model("category", categorySchema);
-module.exports = Category;
+const Grocery = mongoose.model("grocery", grocerySchema);
+module.exports = Grocery;

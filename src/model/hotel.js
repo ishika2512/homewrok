@@ -1,16 +1,23 @@
-const { number } = require("joi");
 const mongoose = require("mongoose");
-const categorySchema = new mongoose.Schema(
+const hotelSchema = new mongoose.Schema(
     {
-        category_name: {
+        hotel_name: {
             type: String,
             trim: true,
         },
-        category_desc: {
+        hotel_type: {
             type: String,
             trim: true,
         },
-        category_price: {
+        hotel_location: {
+            type: String,
+            trim: true,
+        },
+        room_type: {
+            type: String,
+            trim: true,
+        },
+        room_rent: {
             type: Number,
         },
         is_active: {
@@ -24,5 +31,5 @@ const categorySchema = new mongoose.Schema(
     }
 );
 
-const Category = mongoose.model("category", categorySchema);
-module.exports = Category;
+const Hotel = mongoose.model("hotel", hotelSchema);
+module.exports = Hotel;

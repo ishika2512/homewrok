@@ -4,21 +4,25 @@ const Joi = require("joi");
 const createCategory = {
     body: Joi.object().keys({
         category_name: Joi.string().required().trim(),
-        category_desc: Joi.string().required().trim()
+        category_desc: Joi.string().required().trim(),
+        category_price: Joi.number().integer().required()
     }),
 };
 
-/** GEt category list */
-const getCategoryList = {
-    query: Joi.object().keys({
-        search: Joi.string().trim().allow(""),
-        sortBy: Joi.string().trim().allow(""),
-        limit: Joi.number().integer().allow(""),
-        page: Joi.number().integer().allow(""),
-    }),
-};
+// /** update category */
+// const updateDetails ={
+//     params: Joi.object().keys({
+//         categoryid:Joi.string().trim(),
+//     }),
+
+//     body: Joi.objet().keys({
+//         category_name: Joi.string().required().trim(),
+//         category_desc: Joi.string().required().trim(),
+//         category_price: Joi.number().integer().required()
+//     }),
+// };
 
 module.exports = {
     createCategory,
-    getCategoryList
+    // updateDetails
 };

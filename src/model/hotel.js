@@ -17,6 +17,10 @@ const hotelSchema = new mongoose.Schema(
             type: String,
             trim: true,
         },
+        travel: {
+            type: mongoose.Types.ObjectId,
+            ref: "travel",
+        },
         room_rent: {
             type: Number,
         },

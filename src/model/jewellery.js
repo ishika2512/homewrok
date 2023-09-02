@@ -19,6 +19,10 @@ const jewellerySchema = new mongoose.Schema(
         total_amount: {
             type: Number,
         },
+        category: {
+            type: mongoose.Types.ObjectId,
+            ref: "category",
+        },
         is_active: {
             type: Boolean,
             default: true,

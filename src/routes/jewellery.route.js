@@ -8,7 +8,7 @@ const router = express.Router();
 /** create jewellery */
 router.post(
     "/create-jewellery",
-    // validate(jewelleryValidation.createJewellery),
+    validate(jewelleryValidation.createJewellery),
     jewelleryController.createJewellery
 );
 
@@ -25,4 +25,11 @@ router.delete(
     // validate(jewelleryValidation.deletejewellery),
     jewelleryController.deletejewellery
 );
+
+// /** jewellery details update by id*/
+// router.put(
+//     "/update-jewellery/:userId",
+//     validate(jewelleryValidation.updateDetails),
+//     jewelleryController.updateDetails
+// );
 module.exports = router;

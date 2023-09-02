@@ -1,13 +1,13 @@
-const { categoryService, emailService } = require("../services");
+const { categoryService } = require("../services");
 
 const createCategory = async (req, res) => {
     try {
         const reqBody = req.body;
 
-        const categoryExists = await categoryService.getCategoryByEmail(reqBody.email);
-        if (categoryExists) {
-            throw new Error("Category already created by this email!");
-        }
+        // const categoryExists = await categoryService.getCategoryByEmail(reqBody.email);
+        // if (categoryExists) {
+        //     throw new Error("Category already created by this email!");
+        // }
         res.status(200).json({
             success: true,
             message: "Category create successfully!",

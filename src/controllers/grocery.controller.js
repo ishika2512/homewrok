@@ -1,4 +1,4 @@
-const { groceryService, emailService } = require("../services");
+const { groceryService } = require("../services");
 
 const createGrocery = async (req, res) => {
     try {

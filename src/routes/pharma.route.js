@@ -8,7 +8,7 @@ const router = express.Router();
 /** create pharma */
 router.post(
     "/create-pharma",
-    // validate(pharmaValidation.createPharma),
+    validate(pharmaValidation.createPharma),
     pharmaController.createPharma
 );
 
@@ -25,4 +25,11 @@ router.delete(
     // validate(pharmaValidation.deletepharma),
     pharmaController.deletepharma
 );
+
+// /** pharma details update by id*/
+// router.put(
+//     "/update-pharma/:pharmaId",
+//     validate(pharmaValidation.updateDetails),
+//     pharmaController.updateDetails
+// );
 module.exports = router;

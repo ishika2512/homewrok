@@ -8,7 +8,7 @@ const router = express.Router();
 /** create grocery */
 router.post(
     "/create-grocery",
-    // validate(groceryValidation.createGrocery),
+    validate(groceryValidation.createGrocery),
     groceryController.createGrocery
 );
 
@@ -24,4 +24,11 @@ router.delete(
     // validate(groceryValidation.DeleteGrocery),
     groceryController.deletegrocery
 );
+
+// /** grocery details update by id*/
+// router.put(
+//     "/update-grocery/:groceryId",
+//     validate(groceryValidation.updateDetails),
+//     groceryController.updateDetails
+// );
 module.exports = router;

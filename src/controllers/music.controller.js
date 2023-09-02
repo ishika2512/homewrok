@@ -1,4 +1,4 @@
-const { musicService, emailService } = require("../services");
+const { musicService } = require("../services");
 
 const createMusic = async (req, res) => {
     try {

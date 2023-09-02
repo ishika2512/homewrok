@@ -11,17 +11,22 @@ const createJewellery = {
     }),
 };
 
-/** GEt jewellery list */
-const getJewelleryList = {
-    query: Joi.object().keys({
-        search: Joi.string().trim().allow(""),
-        sortBy: Joi.string().trim().allow(""),
-        limit: Joi.number().integer().allow(""),
-        page: Joi.number().integer().allow(""),
-    }),
-};
+// /** update jewellery */
+// const updateDetails ={
+//     params: Joi.object().keys({
+//     jewelleryid:Joi.string().trim(),
+//     }),
+
+//     body: Joi.objet().keys({
+//         jewellery_name: Joi.string().required().trim(),
+//         jewellery_type: Joi.string().required().trim(),
+//         jewellery_materials: Joi.string().required().trim(),
+//         bill_number: Joi.string().required().trim(),
+//         total_amount: Joi.number().integer().required()
+//     }),
+// };
 
 module.exports = {
     createJewellery,
-    getJewelleryList
+    // updateDetails
 };

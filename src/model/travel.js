@@ -20,10 +20,11 @@ const travelSchema = new mongoose.Schema(
         travel_package: {
             type: Number,
         },
-        hotel_name: {
-            type: String,
-            trim: true,
-        },
+        bus: {
+            type: mongoose.Types.ObjectId,
+            ref: "bus",
+        },           
+            
         is_active: {
             type: Boolean,
             default: true,

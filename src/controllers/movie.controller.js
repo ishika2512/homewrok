@@ -1,4 +1,4 @@
-const { movieService, emailService } = require("../services");
+const { movieService } = require("../services");
 
 const createMovie = async (req, res) => {
     try {

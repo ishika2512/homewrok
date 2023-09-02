@@ -8,7 +8,7 @@ const router = express.Router();
 /** create stationary */
 router.post(
     "/create-stationary",
-    // validate(stationaryValidation.createStationary),
+    validate(stationaryValidation.createStationary),
     stationaryController.createStationary
 );
 
@@ -25,4 +25,11 @@ router.delete(
     // validate(stationaryValidation.deletestationary),
     stationaryController.deletestationary
 );
+
+// /** stationary details update by id*/
+// router.put(
+//     "/update-stationary/:userId",
+//     validate(stationaryValidation.updateDetails),
+//     stationaryController.updateDetails
+// );
 module.exports = router;

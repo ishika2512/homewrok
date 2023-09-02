@@ -16,6 +16,10 @@ const busSchema = new mongoose.Schema(
         ticket_price: {
             type: Number,
         },
+        travel: {
+            type: mongoose.Types.ObjectId,
+            ref: "travel",
+        },           
         is_active: {
             type: Boolean,
             default: true,

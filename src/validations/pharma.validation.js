@@ -12,17 +12,23 @@ const createPharma = {
     }),
 };
 
-/** GEt pharma list */
-const getPharmaList = {
-    query: Joi.object().keys({
-        search: Joi.string().trim().allow(""),
-        sortBy: Joi.string().trim().allow(""),
-        limit: Joi.number().integer().allow(""),
-        page: Joi.number().integer().allow(""),
-    }),
-};
+// /** update pharma */
+// const updateDetails ={
+//     params: Joi.object().keys({
+//     pharmaid:Joi.string().trim(),
+//     }),
+
+//     body: Joi.objet().keys({
+//         name: Joi.string().required().trim(),
+//         agency_name: Joi.string().required().trim(),
+//         manufacture: Joi.string().required().trim(),
+//         description: Joi.string().required().trim(),
+//         dosage: Joi.string().required().trim(),
+//         price: Joi.number().integer().required()
+//     }),
+// };
 
 module.exports = {
     createPharma,
-    getPharmaList
+    // updateDetails
 };

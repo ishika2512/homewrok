@@ -1,5 +1,5 @@
 const express = require("express");
-// const { categoryValidation } = require("../validations");
+const { categoryValidation } = require("../validations");
 const { categoryController } = require("../controllers");
 const validate = require("../middlewares/validate");
 
@@ -8,7 +8,7 @@ const router = express.Router();
 /** create category */
 router.post(
     "/create-category",
-    // validate(categoryValidation.createCategory),
+    validate(categoryValidation.createCategory),
     categoryController.createCategory
 );
 
@@ -25,4 +25,11 @@ router.delete(
     // validate(categoryValidation.DeleteCategory),
     categoryController.deletecategory
 );
+
+// /** category details update by id*/
+// router.put(
+//     "/update-category/:userid",
+//     validate(categoryValidation.updateDetails),
+//     categoryController.updateDetails
+// );
 module.exports = router;

@@ -8,7 +8,7 @@ const router = express.Router();
 /** create travel */
 router.post(
     "/create-travel",
-    // validate(travelValidation.createTravel),
+    validate(travelValidation.createTravel),
     travelController.createTravel
 );
 
@@ -25,5 +25,12 @@ router.delete(
     // validate(travelValidation.deletetravel),
     travelController.deletetravel
 );
+
+// /** travel details update by id*/
+// router.put(
+//     "/update-travel/:travelId",
+//     validate(travelValidation.updateDetails),
+//     travelController.updateDetails
+// );
 
 module.exports = router;

@@ -10,17 +10,21 @@ const createBus = {
     }),
 };
 
-/** GEt bus list */
-const getBusList = {
-    query: Joi.object().keys({
-        search: Joi.string().trim().allow(""),
-        sortBy: Joi.string().trim().allow(""),
-        limit: Joi.number().integer().allow(""),
-        page: Joi.number().integer().allow(""),
-    }),
-};
+// /** update bus */
+// const updateDetails ={
+//     params: Joi.object().keys({
+//         busid:Joi.string().trim(),
+//     }),
+
+//     body: Joi.objet().keys({
+//         bus_name: Joi.string().required().trim(),
+//         bus_route: Joi.string().required().trim(),
+//         driver_name: Joi.string().required().trim(),
+//         ticket_price:  Joi.number().integer().required()
+//     }),
+// };
 
 module.exports = {
     createBus,
-    getBusList
+    // updateDetails
 };

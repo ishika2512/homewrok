@@ -24,6 +24,18 @@ const schoolSchema = new mongoose.Schema(
         index_number: {
             type: Number,
         },
+        bus: {
+            type: mongoose.Types.ObjectId,
+            ref: "bus",
+        },
+        stationary: {
+            type: mongoose.Types.ObjectId,
+            ref: "stationary",
+        },
+        book: {
+            type: mongoose.Types.ObjectId,
+            ref: "book",
+        },
         is_active: {
             type: Boolean,
             default: true,

@@ -8,7 +8,7 @@ const router = express.Router();
 /** create movie */
 router.post(
     "/create-movie",
-    // validate(movieValidation.createMovie),
+    validate(movieValidation.createMovie),
     movieController.createMovie
 );
 
@@ -25,5 +25,12 @@ router.delete(
     // validate(movieValidation.deletemovie),
     movieController.deletemovie
 );
+
+// /** movie details update by id*/
+// router.put(
+//     "/update-movie/:movieid",
+//     validate(movieValidation.updateDetails),
+//     movieController.updateDetails
+// );
 
 module.exports = router;

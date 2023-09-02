@@ -1,28 +1,21 @@
 const mongoose = require("mongoose");
-const pharmaSchema = new mongoose.Schema(
+const musicSchema = new mongoose.Schema(
     {
-        name: {
+        product_name: {
             type: String,
             trim: true,
         },
-        agency_name: {
-            type: String,
-            trim: true,
-        },
-        manufacture: {
-            type: String,
-            trim: true,
-        },
-        description: {
-            type: String,
-            trim: true,
-        },
-        dosage: {
-            type: String,
-            trim: true,
-        },
-        price: {
+        product_id: {
             type: Number,
+            trim: true,
+        },
+        product_quantity: {
+            type: Number,
+            trim: true,
+        },
+        product_price: {
+            type: Number,
+            trim: true,
         },
         category: {
             type: mongoose.Types.ObjectId,
@@ -39,5 +32,5 @@ const pharmaSchema = new mongoose.Schema(
     }
 );
 
-const Pharma = mongoose.model("pharma", pharmaSchema);
-module.exports = Pharma;
+const Product = mongoose.model("product", productSchema);
+module.exports = Product;

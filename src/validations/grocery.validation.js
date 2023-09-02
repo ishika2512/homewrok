@@ -10,17 +10,20 @@ const createGrocery = {
     }),
 };
 
-/** GEt grocery list */
-const getGroceryList = {
-    query: Joi.object().keys({
-        search: Joi.string().trim().allow(),
-        sortBy: Joi.string().trim().allow(),
-        limit: Joi.number().integer().allow(),
-        page: Joi.number().integer().allow(""),
-    }),
-};
+// /** update grocery */
+// const updateDetails ={
+//     params: Joi.object().keys({
+//         groceryid:Joi.string().trim(),
+//     }),
 
+//     body: Joi.objet().keys({
+//         grocery_name: Joi.string().required().trim(),
+//         grocery_category: Joi.string().required().trim(),
+//         grocery_quanty: Joi.number().integer().required(),
+//         grocery_price: Joi.number().integer().required()
+//     }),
+// };
 module.exports = {
     createGrocery,
-    getGroceryList
+    // updateDetails
 };

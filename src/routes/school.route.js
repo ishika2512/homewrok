@@ -8,7 +8,7 @@ const router = express.Router();
 /** create scchool */
 router.post(
     "/create-school",
-    // validate(schoolValidation.createSchool),
+    validate(schoolValidation.createSchool),
     schoolController.createSchool
 );
 
@@ -25,4 +25,11 @@ router.delete(
     // validate(schoolValidation.deleteschool),
     schoolController.deleteschool
 );
+
+// /** school details update by id*/
+// router.put(
+//     "/update-school/:schoolId",
+//     validate(schoolValidation.updateDetails),
+//     schoolController.updateDetails
+// );
 module.exports = router;

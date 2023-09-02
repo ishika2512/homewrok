@@ -8,7 +8,7 @@ const router = express.Router();
 /** create hotel */
 router.post(
     "/create-hotel",
-    // validate(hotelValidation.createHotel),
+    validate(hotelValidation.createHotel),
     hotelController.createHotel
 );
 
@@ -26,4 +26,10 @@ router.delete(
     hotelController.deletehotel
 );
 
+// /** hotel details update by id*/
+// router.put(
+//     "/update-hotel/:hotelId",
+//     validate(hotelValidation.updateDetails),
+//     hotelController.updateDetails
+// );
 module.exports = router;

@@ -1,4 +1,4 @@
-const { jewelleryService, emailService } = require("../services");
+const { jewelleryService } = require("../services");
 
 const createJewellery = async (req, res) => {
     try {

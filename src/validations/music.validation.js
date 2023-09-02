@@ -9,17 +9,19 @@ const createMusic = {
     }),
 };
 
-/** GEt music list */
-const getMusicList = {
-    query: Joi.object().keys({
-        search: Joi.string().trim().allow(""),
-        sortBy: Joi.string().trim().allow(""),
-        limit: Joi.number().integer().allow(""),
-        page: Joi.number().integer().allow(""),
-    }),
-};
+// /** update music */
+// const updateDetails ={
+//     params: Joi.object().keys({
+//     musicid:Joi.string().trim(),
+//     }),
 
+//     body: Joi.objet().keys({
+//         song_title: Joi.string().required().trim(),
+//         song_name: Joi.string().required().trim(),
+//         artists_name: Joi.string().required().trim(),
+//     }),
+// };
 module.exports = {
     createMusic,
-    getMusicList
+    // updateDetails
 };

@@ -1,4 +1,4 @@
-const { schoolService, emailService } = require("../services");
+const { schoolService } = require("../services");
 const createSchool = async (req, res) => {
     try {
         const reqBody = req.body;

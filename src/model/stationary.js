@@ -23,6 +23,10 @@ const stationarySchema = new mongoose.Schema(
         item_price: {
             type: Number,
         },
+        book: {
+            type: mongoose.Types.ObjectId,
+            ref: "book",
+        },
         is_active: {
             type: Boolean,
             default: true,

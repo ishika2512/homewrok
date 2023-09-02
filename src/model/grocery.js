@@ -15,6 +15,10 @@ const grocerySchema = new mongoose.Schema(
         grocery_price: {
             type: Number,
         },
+        product: {
+            type: mongoose.Types.ObjectId,
+            ref: "product",
+        },
         is_active: {
             type: Boolean,
             default: true,

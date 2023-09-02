@@ -1,4 +1,4 @@
-const { hotelService, emailService } = require("../services");
+const { hotelService } = require("../services");
 
 const createHotel = async (req, res) => {
     try {

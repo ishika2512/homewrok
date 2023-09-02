@@ -1,4 +1,4 @@
-const { stationaryService, emailService } = require("../services");
+const { stationaryService } = require("../services");
 
 const createStationary = async (req, res) => {
     try {

@@ -1,4 +1,4 @@
-const { categoryService, emailService } = require("../services");
+const { pharmaService } = require("../services");
 
 const createPharma = async (req, res) => {
     try {

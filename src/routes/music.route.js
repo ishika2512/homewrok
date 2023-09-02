@@ -8,7 +8,7 @@ const router = express.Router();
 /** create music */
 router.post(
     "/create-music",
-    // validate(musicValidation.createMusic),
+    validate(musicValidation.createMusic),
     musicController.createMusic
 );
 
@@ -26,4 +26,10 @@ router.delete(
     musicController.deletemusic
 );
 
+// /** music details update by id*/
+// router.put(
+//     "/update-music/:userId",
+//     validate(musicValidation.updateDetails),
+//     musicController.updateDetails
+// );
 module.exports = router;

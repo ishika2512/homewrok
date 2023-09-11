@@ -12,22 +12,7 @@ const createTravel = {
     }),
 };
 
-// /** update travel */
-// const updateDetails ={
-//     params: Joi.object().keys({
-//     travelid:Joi.string().trim(),
-//     }),
 
-//     body: Joi.objet().keys({
-//         travel_agency: Joi.string().required().trim(),
-//         traveler_name: Joi.string().required().trim(),
-//         booking_confirmation: Joi.string().required().trim(),
-//         travel_place: Joi.string().required().trim(),
-//         travel_package: Joi.number().integer().required(),
-//         hotel_name: Joi.string().required().trim()
-//     }),
-// };
 module.exports = {
     createTravel,
-    // updateDetails
 };

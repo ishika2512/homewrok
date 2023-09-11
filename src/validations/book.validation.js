@@ -8,19 +8,6 @@ const createBook= {
     }),
 };
 
-// /** update book */
-// const updateDetails ={
-//     params: Joi.object().keys({
-//         bookid:Joi.string().trim(),
-//     }),
-
-//     body: Joi.objet().keys({
-//         book_name:Joi.string().trim(),
-//         book_desc: Joi.string().trim()
-//     }),
-// };
-
 module.exports = {
     createBook,
-    // updateDetails
 };

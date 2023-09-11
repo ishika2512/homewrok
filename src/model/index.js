@@ -10,3 +10,4 @@ module.exports.movie = require("./movie");
 module.exports.music = require("./music");
 module.exports.jewellery = require("./jewellery");
 module.exports.grocery = require("./grocery");
+module.exports.mobile = require("./mobile");

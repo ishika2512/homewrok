@@ -9,3 +9,4 @@ module.exports.userSercice = require("./pharma.service");
 module.exports.userSercice = require("./school.service");
 module.exports.userSercice = require("./stationary.service");
 module.exports.userSercice = require("./travel.service");
+module.exports.mobileService = require("./");

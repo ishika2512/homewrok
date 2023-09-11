@@ -11,6 +11,7 @@ const pharmaRoute = require("./pharma.route");
 const groceryRoute = require("./grocery.route");
 const travelRoute = require("./travel.route");
 const productRoute = require("./product.route")
+const mobileRoute = require("./mobile.route");
 const router = express.Router();
 
 router.use("/category", categoyRoute);
@@ -25,4 +26,5 @@ router.use("/pharma", pharmaRoute);
 router.use("/grocery", groceryRoute);
 router.use("/travel", travelRoute);
 router.use("/product",productRoute);
+router.use("/mobile", mobileRoute);
 module.exports = router;

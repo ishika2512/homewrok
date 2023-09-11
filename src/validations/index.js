@@ -11,3 +11,4 @@ module.exports.stationaryValidation = require("./stationary.validation");
 module.exports.travelValidation = require("./travel.validation");
 module.exports.bookValidation = require("./book.validation");
 module.exports.productValidation = require("./product.validation");
+module.exports.mobileValidation = require("./mobile.validation");

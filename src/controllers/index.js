@@ -11,3 +11,4 @@ module.exports.stationaryController = require("./stationary.controller");
 module.exports.travelController = require("./travel.controller");
 module.exports.bookController = require("./book.controller");
 module.exports.productController = require("./product.controller");
+module.exports.mobileController = require("./mobile.controller");
